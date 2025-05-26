@@ -1,0 +1,6 @@
+<!CDATA
+DELETE FROM MDBMEHIST
+WHERE PTNO = #{ptno}
+AND MDRP_NO = #{mdrpNo}
+AND TO_CHAR(MDFC_DT, 'YYYY-MM-DD HH24:MI:SS') = #{mdfcDt};
+]]>
